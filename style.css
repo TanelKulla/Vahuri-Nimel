@@ -1,5 +1,41 @@
+<<<<<<< HEAD
   .git
    index.html
    README.md
    vaheleht1.html
    vaheleht2.html
+=======
+h1 {
+  color: black;
+  text-align: center;
+  font-family: impact, fantasy;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+p {
+  text-align: center;
+}
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+  font-weight: bolder;
+}
+
+>>>>>>> Rene-branch
