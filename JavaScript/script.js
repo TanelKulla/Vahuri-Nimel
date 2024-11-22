@@ -30,6 +30,6 @@ function convertLinksToHypertext(text) {
     
     // asenda url
     return text.replace(regex, (url) => {
-      return `<a href="${url}" target="_blank">${url}</a>`;
+      return `<a href="${url}" >${url}</a>`;
     });
 }
