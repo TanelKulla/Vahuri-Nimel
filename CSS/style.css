@@ -39,10 +39,7 @@ a:hover {
 }
 
 #file_content {
-  text-align: justify;
   white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   font-size: 125%;
   line-height: 125%;
   display: flex;
