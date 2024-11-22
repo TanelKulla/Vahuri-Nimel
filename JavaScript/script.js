@@ -1,4 +1,4 @@
-// Autor ChatGPT
+// Autor: ChatGPT
 // Natukene muudetud tiimiliikme Tanel Kulla poolt
 
 const script = document.currentScript;
