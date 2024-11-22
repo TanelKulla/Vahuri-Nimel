@@ -1,19 +1,20 @@
-// Get the script element to retrieve the data attribute
-const script = document.currentScript; // Gets the currently executing script
-const filePath = script.getAttribute('data-file-path'); // Retrieve the data-file-path attribute
+const script = document.currentScript;
+const filePath = script.getAttribute('data-file-path'); // Saa faili asukoht
 
-// Fetch the content of the file
+// Loe faili sisu
 fetch(filePath)
     .then(response => {
+        // Midagi läks valesti
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         return response.text();
     })
+    // Midagi ei läinud valesti
     .then(data => {
-        document.getElementById('fileContent').textContent = data;
+        document.getElementById('file_content').textContent = data;
     })
     .catch(error => {
-        document.getElementById('fileContent').textContent = 'Error loading file: ' + error.message;
+        document.getElementById('file_content').textContent = 'Error loading file: ' + error.message;
     });
 
