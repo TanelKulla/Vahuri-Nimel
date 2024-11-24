@@ -29,7 +29,7 @@ body {
 }
 
 p {
-  text-align: center;
+  text-align: justify;
   line-height: 125%;
   font-size: 125%;
 }
@@ -46,8 +46,8 @@ p {
 }
 
 #index_page-content {
-  width: 75%;
-  margin-left: 12.5%;
+  width: 60%;
+  margin-left: 0%;
   display: flex;
   flex-direction: column;
 }
