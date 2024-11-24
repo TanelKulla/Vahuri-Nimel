@@ -1,0 +1,54 @@
+h1 {
+  color: black;
+  text-align: center;
+  font-family: impact, fantasy;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+p {
+  text-align: center;
+  line-height: 125%;
+  font-size: 125%;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+#index_page-content {
+  width: 75%;
+  margin-left: 12.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#file_content {
+  white-space: pre-wrap;
+  display: flex;
+}
+
+#index_page-hyperlinks{
+  padding-top: 2.5%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 145%;
+  font-weight: bold;
+}
