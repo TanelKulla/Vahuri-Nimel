@@ -8,7 +8,7 @@ h2 {
   color: black;
   text-align: center;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 body {
@@ -17,7 +17,10 @@ body {
 
 p {
   text-align: center;
+  line-height: 125%;
+  font-size: 125%;
 }
+
 a:link {
   color: black;
 }
@@ -28,9 +31,24 @@ a:visited {
 
 a:hover {
   color: blue;
-  font-weight: bolder;
-<<<<<<< HEAD:style.css
 }
-=======
+
+#index_page-content {
+  width: 75%;
+  margin-left: 12.5%;
+  display: flex;
+  flex-direction: column;
 }
->>>>>>> ee32259a46639086e0bcd44fa5a3391636fbbba3:CSS/style.css
+
+#file_content {
+  white-space: pre-wrap;
+  display: flex;
+}
+
+#index_page-hyperlinks{
+  padding-top: 2.5%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 145%;
+  font-weight: bold;
+}

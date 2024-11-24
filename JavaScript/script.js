@@ -1,19 +1,35 @@
-// Get the script element to retrieve the data attribute
-const script = document.currentScript; // Gets the currently executing script
-const filePath = script.getAttribute('data-file-path'); // Retrieve the data-file-path attribute
+// Autor: ChatGPT
+// Natukene muudetud tiimiliikme Tanel Kulla poolt
 
-// Fetch the content of the file
+const script = document.currentScript;
+const filePath = script.getAttribute('data-file-path'); // Saa faili asukoht
+
+// Loe faili sisu
 fetch(filePath)
     .then(response => {
+        // Midagi läks valesti
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         return response.text();
     })
+    // Midagi ei läinud valesti
     .then(data => {
-        document.getElementById('fileContent').textContent = data;
+        const formatted_text = convertLinksToHypertext(data);
+        document.getElementById('file_content').innerHTML = `<p>${formatted_text}</p>`;
     })
+    // Midagi läks vist uuesti valesti
     .catch(error => {
-        document.getElementById('fileContent').textContent = 'Error loading file: ' + error.message;
+        document.getElementById('file_content').textContent = 'Error loading file: ' + error.message;
     });
 
+// Muuda URL'id kujule <a> href="[url]"</a>
+function convertLinksToHypertext(text) {
+    // regex mille ma tõmbasin kuskil välja
+    const regex = /(https?:\/\/[^\s)]+)(?=\s|\)|$)/g;
+    
+    // asenda url
+    return text.replace(regex, (url) => {
+      return `<a href="${url}" >${url}</a>`;
+    });
+}
