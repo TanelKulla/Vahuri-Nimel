@@ -2,16 +2,16 @@ h1 {
   color: #2c3e50;
   text-align: center;
   font-family: "Nunito";
-  font-size: 2.5rem; /* Suurem ja silmapaistvam */
-  margin-bottom: 20px;
+  font-size: 3vw;
+  margin-bottom: 1%;
 }
 
 h2 {
   color: #34495e;
   text-align: center;
-  font-size: 1.8rem; /* Järgmine tase h1-st */
+  font-size: 200%;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 1%;
   font-family: "Nunito";
 }
 
@@ -77,20 +77,19 @@ img {
   display: flex;
   flex-wrap: wrap; /* Lubab ridade mähkimise */
   justify-content: center; /* Keskjoondamine horisontaalselt */
-  gap: 20px; /* Vahe kastide vahel */
-  margin: 20px auto;
-  max-width: 1200px;
+  gap: 10%; /* Vahe kastide vahel */
+  margin: 0.5% auto;
+  max-width: 80%;
 }
 
 /* Tekstikastid */
 .text-container {
   flex: 1 1 45%; /* Kast võtab kuni 45% laiusest */
-  max-width: 500px; /* Maksimaalne laius kastile */
-  min-width: 300px; /* Minimaalne laius, et säilitada kujundus */
+  max-width: 40%; /* Maksimaalne laius kastile */
+  min-width: 25%; /* Minimaalne laius, et säilitada kujundus */
   background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5%;
+  border-radius: 3%;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -101,14 +100,6 @@ img {
   background-color: white;
 }
 
-/* Väiksemad ekraanid (mobiilid ja kitsamad seadmed) */
-@media (max-width: 768px) {
-  .text-container {
-    flex: 1 1 100%; /* Kast võtab kogu laiuse */
-    max-width: 100%; /* Eemaldab maksimaalse laiuse piirangu */
-  }
-}
-
 button {
   padding: 10px 20px;
   background-color: #007bff; /* Sinine nupp */
@@ -116,7 +107,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 100%;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease; /* Hover efektid */
   font-family: "Nunito";
@@ -133,20 +124,20 @@ button:hover {
 
 .button-container {
   text-align: center; /* Nupud keskele */
-  margin-top: 10px;
+  margin-top: 1%;
 }
 
 /* Avalehe lingi stiil */
 .avaleht {
   position: absolute;
-  top: 10px; /* Kaugus ülevalt */
-  left: 10px; /* Kaugus vasakult */
+  top: 1%; /* Kaugus ülevalt */
+  left: 1%; /* Kaugus vasakult */
   color: #2c3e50;
   background-color: white;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 0.5vh 0.6vw;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
