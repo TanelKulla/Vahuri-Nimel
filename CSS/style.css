@@ -29,7 +29,7 @@ body {
 }
 
 p {
-  text-align: justify;
+  text-align: center;
   line-height: 125%;
   font-size: 125%;
 }
@@ -46,10 +46,17 @@ p {
 }
 
 #index_page-content {
-  width: 60%;
-  margin-left: 0%;
+  width: 75%;
+  margin-left: 12.5%;
   display: flex;
   flex-direction: column;
+}
+
+img {
+  align-content: center;
+  max-width: 100%;
+  border-radius: 80%;
+  
 }
 
 #file_content {
@@ -63,90 +70,4 @@ p {
   justify-content: space-evenly;
   font-size: 145%;
   font-weight: bold;
-}
-
-/* Konteiner */
-.container {
-  display: flex;
-  flex-wrap: wrap; /* Lubab ridade mähkimise */
-  justify-content: center; /* Keskjoondamine horisontaalselt */
-  gap: 20px; /* Vahe kastide vahel */
-  margin: 20px auto;
-  max-width: 1200px;
-}
-
-/* Tekstikastid */
-.text-container {
-  flex: 1 1 45%; /* Kast võtab kuni 45% laiusest */
-  max-width: 500px; /* Maksimaalne laius kastile */
-  min-width: 300px; /* Minimaalne laius, et säilitada kujundus */
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.text-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  background-color: white;
-}
-
-/* Väiksemad ekraanid (mobiilid ja kitsamad seadmed) */
-@media (max-width: 768px) {
-  .text-container {
-    flex: 1 1 100%; /* Kast võtab kogu laiuse */
-    max-width: 100%; /* Eemaldab maksimaalse laiuse piirangu */
-  }
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff; /* Sinine nupp */
-  color: #ffffff; /* Valge tekst */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Hover efektid */
-  font-family: "Nunito";
-}
-
-button:hover {
-  background-color: #0056b3; /* Tumedam sinine */
-  transform: scale(1.05); /* Kergelt suurendab nuppu */
-}
-
-.extraText {
-  display: none; /* Alguses peidetud */
-}
-
-.button-container {
-  text-align: center; /* Nupud keskele */
-  margin-top: 10px;
-}
-
-/* Avalehe lingi stiil */
-.avaleht {
-  position: absolute;
-  top: 10px; /* Kaugus ülevalt */
-  left: 10px; /* Kaugus vasakult */
-  color: #2c3e50;
-  background-color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  font-family: "Nunito";
-}
-
-.avaleht:hover {
-  background-color: #003d80; /* Hover-efekt */
-  color: white;
 }
